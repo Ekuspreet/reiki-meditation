@@ -120,6 +120,17 @@ a:focus {
   z-index: -1;
 }
 
+.hero_area .hero_bg_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
 .hero_area .hero_bg_box img {
   width: 100%;
   height: 100%;
@@ -127,11 +138,13 @@ a:focus {
      object-fit: cover;
   -o-object-position: bottom right;
      object-position: bottom right;
+  position: relative;
+  z-index: 0;
 }
 
 .sub_page .hero_area {
   min-height: auto;
-  background-color: #178066;
+  background-color: #daad83;
 }
 
 .sub_page .hero_area .hero_bg_box {
@@ -150,7 +163,7 @@ a:focus {
 .navbar-brand span {
   font-weight: bold;
   font-size: 24px;
-  color: #ffffff;
+  color:white;
   text-transform: uppercase;
 }
 
@@ -164,7 +177,8 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ffffff;
+  color:white;
+  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -180,9 +194,7 @@ a:focus {
   color: #ffffff;
 }
 
-.custom_nav-container .nav_search-btn:hover {
-  color: #62d2a2;
-}
+
 
 .custom_nav-container .navbar-toggler {
   outline: none;
@@ -270,7 +282,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: #1fab89;
+  color: #daad83;
 }
 
 .slider_section .detail-box h1 {
@@ -304,7 +316,7 @@ a:focus {
   display: inline-block;
   padding: 10px 15px;
   background-color: #ffffff;
-  color: #62d2a2;
+  color: #daad83;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -379,7 +391,7 @@ a:focus {
   width: 90px;
   height: 90px;
   margin-bottom: 15px;
-  background-color: #62d2a2;
+  background-color: #daad83;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,7 +417,7 @@ a:focus {
 }
 
 .department_section .box .detail-box a {
-  color: #1fab89;
+  color: #daad83;
   font-weight: 600;
 }
 
@@ -470,18 +482,18 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #62d2a2;
+  background-color: #daad83;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #62d2a2;
+  border: 1px solid #daad83;
   margin-top: 15px;
 }
 
 .about_section .detail-box a:hover {
   background-color: transparent;
-  color: #62d2a2;
+  color: #daad83;
 }
 
 .doctor_section {
@@ -546,7 +558,7 @@ a:focus {
 }
 
 .doctor_section .box .detail-box .social_box a:hover {
-  color: #1fab89;
+  color: #daad83;
 }
 
 .doctor_section .box:hover .social_box {
@@ -567,17 +579,17 @@ a:focus {
 .doctor_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #1fab89;
+  background-color: #daad83;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #1fab89;
+  border: 1px solid #daad83;
 }
 
 .doctor_section .btn-box a:hover {
   background-color: transparent;
-  color: #1fab89;
+  color: #daad83;
 }
 
 .contact_section {
@@ -629,17 +641,17 @@ a:focus {
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 55px;
-  background-color: #1fab89;
+  background-color: #daad83;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #1fab89;
+  border: 1px solid #daad83;
 }
 
 .contact_section .form_container button:hover {
   background-color: transparent;
-  color: #1fab89;
+  color: #daad83;
 }
 
 .contact_section .map_container {
@@ -747,7 +759,7 @@ a:focus {
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #1fab89;
+  background-color: #daad83;
 }
 
 .client_section .carousel-control-next {
@@ -755,10 +767,11 @@ a:focus {
 }
 
 .footer_section {
-  background: #178066;
+  background: #daad83;
   color: #ffffff;
   padding: 60px 0 15px 0;
-  position: relative;
+  /* position: relative; */
+  display: flex;
 }
 
 .footer_section h4 {
